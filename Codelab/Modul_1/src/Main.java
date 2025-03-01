@@ -1,7 +1,7 @@
 import java.time.LocalDate;
 import java.util.Scanner;
 
-public class Modul_1 {
+public class Main{
     public static void main(String[] args){
         String nama;
         char gender;
@@ -18,7 +18,7 @@ public class Modul_1 {
         int umur = TahunSekarang-TahunLahir;
         //Output
         if (gender == 'L' || gender == 'l') {
-            System.out.print("\nData Diri: \n Nama          :"+ nama + "\n Jenis Kelamin : Laki-Laki \n Umur          : " + umur);
+            System.out.print("\nData Diri: \n Nama          :" + nama + "\n Jenis Kelamin : Laki-Laki \n Umur          : " + umur);
         }else if (gender == 'P' || gender == 'p'){
             System.out.println("\nData Diri : \n Nama          :" + nama + "\n Jenis Kelamin : Perempuan \n Umur          : " + umur);
         }else{
