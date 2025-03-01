@@ -1,7 +1,7 @@
 import java.time.LocalDate;
 import java.util.Scanner;
 
-public class Main{
+public class Modul_1 {
     public static void main(String[] args){
         String nama;
         char gender;
