@@ -22,7 +22,7 @@ public class Modul_1 {
         }else if (gender == 'P' || gender == 'p'){
             System.out.println("\nData Diri : \n Nama          :" + nama + "\n Jenis Kelamin : Perempuan \n Umur          : " + umur);
         }else{
-            System.out.println("Masukkan Gender sesuai opsi pilihan (P/) ");
+            System.out.println("Masukkan Gender sesuai opsi pilihan (P/L) ");
         }
     }
 }
