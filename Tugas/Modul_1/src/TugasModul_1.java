@@ -43,7 +43,7 @@ public class TugasModul_1 {
                 System.out.println("Login Gagal! Nama atau Nim salah.");
             }
         }else {
-            System.out.println("Pilihan Tidak Valid!!!");
+            System.out.println("Pilihan Tidak Valid!!");
         }
         objInputan.close();
     }
