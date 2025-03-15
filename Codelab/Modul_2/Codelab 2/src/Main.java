@@ -1,15 +1,28 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
-    public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+    public static void main(String[] args){
+        RekeningBank rekening1 = new RekeningBank();
+        RekeningBank rekening2 = new RekeningBank();
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
-        }
+        rekening1.nomorRekening = "202410370110208";
+        rekening2.nomorRekening = "202410370110218";
+
+        rekening1.namaPemilik = "Dicky Habib Putra Hidayatullah";
+        rekening2.namaPemilik = "Revansa adha dwi yuliarto";
+
+        rekening1.saldo = (1000000);
+        rekening2.saldo = (900000);
+
+        rekening1.tampilkaninfo();
+        rekening2.tampilkaninfo();
+
+        rekening1.setorUang(1000000);
+        rekening2.setorUang(1000000);
+
+        rekening1.tarikUang(100000);
+        rekening2.tarikUang(2000000);
+        System.out.println();
+
+        rekening1.tampilkaninfo();
+        rekening2.tampilkaninfo();
     }
 }
