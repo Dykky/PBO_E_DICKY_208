@@ -1,28 +1,30 @@
-public class Admin extends User{
-    String username;
-    String Password;
 
-    public Admin(String nama, String nim, String username, String password) {
-        super(nama, nim);
+class Admin extends User {
+    private String password;
+    private String username;
+
+    public Admin(String username, String password) {
+        super("Dicky Habib Putra Hidayatullah", "202410370110208");
         this.username = username;
-        Password = password;
+        this.password = password;
     }
+
     @Override
-    void Login() { //method untuk menyimpan info login user
-        if (username.equals("Admin208") && Password.equals("Password208")) { //data login user untuk mengecek benar dan salahnya login admin
-            System.out.println("Login Admin berhasil !"); //output jika login admin benar
+    public void Login() {
+        if (username.equals("Admin208") && password.equals("Password208")) {
+            System.out.println("Login Admin berhasil!");
+            System.out.println();
             DisplayInfo();
         } else {
-            System.out.println("Login Gagal ! Username atau Password salah.");//output jika login admin salah
+            System.out.println("Login gagal! Username atau password salah.");
         }
     }
 
     @Override
-    void DisplayInfo(){
-        System.out.println("Data Login Admin : ");
-        System.out.println("Nama : " + getNama());
-        System.out.println("Nim : " + getNim());
-        System.out.println("Username : " +username);
-
+    public void DisplayInfo() {
+        System.out.println("Informasi Admin:");
+        System.out.println("Nama: " + getNama());
+        System.out.println("NIM: " + getNim());
+        System.out.println("Username: " + username);
     }
 }
