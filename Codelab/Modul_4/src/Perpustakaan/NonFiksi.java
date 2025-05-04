@@ -15,5 +15,6 @@ public class NonFiksi extends Buku {
         System.out.println("Judul buku = " + judul);
         System.out.println("Nama Penulis = " + penulis);
         System.out.println("Genre = " + Topik);
+        System.out.println();
     }
 }
