@@ -16,7 +16,5 @@ public abstract class Buku{
     public String getPenulis(){
         return penulis;
     }
-    public void DisplayInfo(){
-        //kosong
-    }
+    public abstract void DisplayInfo();
 }

@@ -10,7 +10,6 @@ public class NonFiksi extends Buku {
 
     @Override
     public void DisplayInfo(){
-        super.DisplayInfo();
         System.out.println("Jenis buku = Non-Fiksi");
         System.out.println("Judul buku = " + judul);
         System.out.println("Nama Penulis = " + penulis);
