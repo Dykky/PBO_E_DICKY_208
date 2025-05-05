@@ -15,6 +15,12 @@ public class Anggota implements Peminjaman {
         System.out.println(Nama + " Meminjam buku berjudul = " + judul);
     }
 
+    @Override
+    public void pinjamBuku(String judul, int durasi) {
+        System.out.println(Nama + " meminjam buku " + judul + " selama " + durasi + " hari.");
+    }
+
+    @Override
     public void kembalikanBuku(String judul) {
         System.out.println(Nama + " Mengembalikan buku berjudul = " + judul);
     }
