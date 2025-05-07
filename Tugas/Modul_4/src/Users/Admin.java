@@ -2,7 +2,7 @@ package Users;
 
 import actions.AdminAction;
 import java.util.Scanner;
-public class Admin extends user implements AdminAction {
+public class Admin extends User implements AdminAction {
     private String Username;
     private String Password;
 

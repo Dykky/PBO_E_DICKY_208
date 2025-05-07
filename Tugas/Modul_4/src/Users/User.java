@@ -1,12 +1,10 @@
 package Users;
 
-import com.sun.security.jgss.GSSUtil;
-
-public abstract class user {
+public abstract class User {
     private String Nama;
     private String Nim;
 
-    public user(String Nama, String Nim){
+    public User(String Nama, String Nim){
         this.Nama = Nama;
         this.Nim = Nim;
     }

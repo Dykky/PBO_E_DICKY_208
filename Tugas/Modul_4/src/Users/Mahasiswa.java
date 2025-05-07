@@ -3,7 +3,7 @@ import actions.MahasiswaAction;
 
 import java.util.Scanner;
 
-public class Mahasiswa extends user implements MahasiswaAction {
+public class Mahasiswa extends User implements MahasiswaAction {
     public Mahasiswa (String Nama, String Nim){
         super(Nama, Nim);
     }
