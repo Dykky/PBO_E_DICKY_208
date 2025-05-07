@@ -12,15 +12,15 @@ public class LoginSystem {
         System.out.println("---Sistem Login---");
         System.out.println("1. Login sebagai Admin");
         System.out.println("2. Login sebagai Mahasiswa");
-        System.out.println("Masukkan Pilihan = ");
+        System.out.print("Masukkan Pilihan =");
         int pilihan = objInput.nextInt();
         objInput.nextLine();
 
         if(pilihan==1){
-            System.out.println("Masukkan Username =");
+            System.out.print("Masukkan Username = ");
             String Username = objInput.nextLine();
 
-            System.out.println("Masukkan Password = ");
+            System.out.print("Masukkan Password = ");
             String Password = objInput.nextLine();
 
             Admin adminobj = new Admin(Username, Password);
@@ -30,10 +30,10 @@ public class LoginSystem {
                 userobj = adminobj;
             }
         } else if (pilihan == 2) {
-            System.out.println("Masukkan Nama = ");
+            System.out.print("Masukkan Nama = ");
             String Nama = objInput.nextLine();
 
-            System.out.println("Masukkan Nim = ");
+            System.out.print("Masukkan Nim = ");
             String Nim = objInput.nextLine();
 
             Mahasiswa mahasiswaobj = new Mahasiswa(Nama, Nim);

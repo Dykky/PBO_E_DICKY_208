@@ -16,6 +16,7 @@ public class Admin extends User implements AdminAction {
     public void Login(){
         if (Username.equalsIgnoreCase("Admin208")&& Password.equalsIgnoreCase("Password208")){
             System.out.println("Login Admin Berhasil");
+            System.out.println();
         }else {
             System.out.println("Login anda gagal! Username atau Password salah.");
         }
@@ -27,6 +28,7 @@ public class Admin extends User implements AdminAction {
         System.out.println("Nama = " + getNama());
         System.out.println("Nim = " + getNim());
         System.out.println("Username = " + Username);
+        System.out.println();
     }
 
     @Override
@@ -39,7 +41,7 @@ public class Admin extends User implements AdminAction {
                 System.out.println("1. Kelola laporan barang ");
                 System.out.println("2. Kelola data Mahasiswa ");
                 System.out.println("0. Logout");
-                System.out.println("Pilih Menu = ");
+                System.out.print("Pilih Menu = ");
                 pilihan = scanner.nextInt();
                 scanner.nextLine();
 
@@ -59,10 +61,12 @@ public class Admin extends User implements AdminAction {
     @Override
     public void manageItems(){
         System.out.println("---Fitur kelola barang masih belum tersedia--- ");
+        System.out.println();
     }
 
     @Override
     public void manageUsers(){
-        System.out.println("---Fitur kelola Mahasiswa masih belum tersedia---");
+        System.out.println("---Fitur kelola data Mahasiswa masih belum tersedia---");
+        System.out.println();
     }
 }

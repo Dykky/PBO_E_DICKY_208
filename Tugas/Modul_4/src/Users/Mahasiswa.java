@@ -13,6 +13,7 @@ public class Mahasiswa extends User implements MahasiswaAction {
         if (getNama().equalsIgnoreCase("Dicky Habib Putra Hidayatullah") &&
                 getNim().equals("202410370110208")) {
             System.out.println("Login Mahasiswa Berhasil!");
+            System.out.println();
             DisplayInfo();
         } else {
             System.out.println("Login anda gagal! Nama atau NIM salah.");
@@ -24,6 +25,7 @@ public class Mahasiswa extends User implements MahasiswaAction {
         System.out.println("--- Informasi Mahasiswa ---");
         System.out.println("Nama = " + getNama());
         System.out.println("Nim = " + getNim());
+        System.out.println();
     }
 
     @Override
@@ -36,7 +38,7 @@ public class Mahasiswa extends User implements MahasiswaAction {
                 System.out.println("1. Laporkan barang temuan / hilang ");
                 System.out.println("2. Lihat daftar Laporan ");
                 System.out.println("0. Logout ");
-                System.out.println("Pilih Menu = ");
+                System.out.print("Pilih Menu = ");
                 pilihan = scanner.nextInt();
                 scanner.nextLine();
 
@@ -56,10 +58,12 @@ public class Mahasiswa extends User implements MahasiswaAction {
     @Override
     public void reportItem(){
         System.out.println("---Fitur laporan barang temuan / hilang masih belum tersedia---");
+        System.out.println();
     }
 
     @Override
     public void viewReportedItems(){
         System.out.println("--- Fitur lihat daftar barang hilang masih belum tersedia---");
+        System.out.println();
     }
 }
