@@ -25,12 +25,10 @@ public abstract class User {
         this.Nim = Nim;
     }
 
-    public abstract void login();
-
     public void DisplayInfo(){
         System.out.println("Nama = " + getNama());
         System.out.println("Nim = " + getNim());
     }
 
-public abstract void DisplayAppMenu();
+    public abstract void DisplayAppMenu();
 }

@@ -1,22 +1,15 @@
 package Users;
 import Actions.MahasiswaAction;
+import Models.Item;
+
 import java.util.Scanner;
+
+import static Main.LoginSystem.input;
+import static Main.LoginSystem.itemList;
 
 public class Mahasiswa extends User implements MahasiswaAction {
     public Mahasiswa(String Nama, String Nim) {
         super(Nama, Nim);
-    }
-
-    @Override
-    public void login() {
-        if (getNama().equalsIgnoreCase("Dicky Habib Putra Hidayatullah") &&
-                getNim().equals("202410370110208")) {
-            System.out.println("Login Mahasiswa Berhasil!");
-            System.out.println();
-            DisplayInfo();
-        } else {
-            System.out.println("Login anda gagal! Nama atau NIM salah.");
-        }
     }
 
     @Override
@@ -56,13 +49,30 @@ public class Mahasiswa extends User implements MahasiswaAction {
 
     @Override
     public void reportItems(){
-        System.out.println("---Fitur laporan barang temuan / hilang masih belum tersedia---");
-        System.out.println();
+        String itemName;
+        String description;
+        String location;
+
+        System.out.printf("Nama Barang yang hilang atau ditemukan: ");
+        itemName = input.nextLine();
+        System.out.printf("Deskripsi Barang: ");
+        description = input.nextLine();
+        System.out.printf("Lokasi ditemukan: ");
+        location = input.nextLine();
+
+        itemList.add(new Item(itemName,description,location));
+        viewReportItems();
     }
 
     @Override
     public void viewReportItems(){
-        System.out.println("--- Fitur lihat daftar barang hilang masih belum tersedia---");
-        System.out.println();
+        for (Item item : itemList){
+            System.out.println("==============================================================================");
+            System.out.println("| Name            | Description               | Location        | Status     |");
+            System.out.println("==============================================================================");
+            System.out.println(item);
+            System.out.println("==============================================================================");
+        }
     }
+
 }
