@@ -22,30 +22,29 @@ public class Mahasiswa extends User implements MahasiswaAction {
 
     @Override
     public void DisplayAppMenu(){
-        try (Scanner scanner = new Scanner(System.in)){
-            int pilihan;
+        int pilihan;
 
-            do{
-                System.out.println("---Menu Mahasiswa---");
-                System.out.println("1. Laporkan barang temuan / hilang ");
-                System.out.println("2. Lihat daftar Laporan ");
-                System.out.println("0. Logout ");
-                System.out.print("Pilih Menu = ");
-                pilihan = scanner.nextInt();
-                scanner.nextLine();
+        do {
+            System.out.println("---Menu Mahasiswa---");
+            System.out.println("1. Laporkan barang temuan / hilang ");
+            System.out.println("2. Lihat daftar Laporan ");
+            System.out.println("0. Logout ");
+            System.out.print("Pilih Menu = ");
+            pilihan = input.nextInt();
+            input.nextLine();
 
-                if (pilihan == 1){
-                    reportItems();
-                } else if (pilihan == 2 ) {
-                    viewReportItems();
-                } else if (pilihan == 0) {
-                    System.out.println("Logout berhasil.");
-                }else {
-                    System.out.println("Pilihan tidak valid, Silahkan coba lagi.");
-                }
-            }while (pilihan !=0);
-        }
+            if (pilihan == 1){
+                reportItems();
+            } else if (pilihan == 2) {
+                viewReportItems();
+            } else if (pilihan == 0) {
+                System.out.println("Logout berhasil.");
+            } else {
+                System.out.println("Pilihan tidak valid, Silahkan coba lagi.");
+            }
+        } while (pilihan != 0);
     }
+
 
     @Override
     public void reportItems(){

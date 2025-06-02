@@ -46,29 +46,27 @@ public class Admin extends User implements AdminAction {
 
     @Override
     public void DisplayAppMenu() {
-        try (Scanner scanner = new Scanner(System.in)) {
-            int pilihan;
+        int pilihan;
 
-            do {
-                System.out.println("---Menu Admin---");
-                System.out.println("1. Kelola laporan barang ");
-                System.out.println("2. Kelola data Mahasiswa ");
-                System.out.println("0. Logout");
-                System.out.print("Pilih Menu = ");
-                pilihan = scanner.nextInt();
-                scanner.nextLine();
+        do {
+            System.out.println("---Menu Admin---");
+            System.out.println("1. Kelola laporan barang ");
+            System.out.println("2. Kelola data Mahasiswa ");
+            System.out.println("0. Logout");
+            System.out.print("Pilih Menu = ");
+            pilihan = input.nextInt();
+            input.nextLine();
 
-                if (pilihan == 1) {
-                    manageItems();
-                } else if (pilihan == 2) {
-                    manageUsers();
-                } else if (pilihan == 0) {
-                    System.out.println("Logout berhasil. ");
-                } else {
-                    System.out.println("Pilihan tidak valid, Silahkan coba lagi.");
-                }
-            } while (pilihan != 0);
-        }
+            if (pilihan == 1) {
+                manageItems();
+            } else if (pilihan == 2) {
+                manageUsers();
+            } else if (pilihan == 0) {
+                System.out.println("Logout berhasil. ");
+            } else {
+                System.out.println("Pilihan tidak valid, Silahkan coba lagi.");
+            }
+        } while (pilihan != 0);
     }
 
     @Override
