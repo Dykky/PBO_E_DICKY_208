@@ -39,19 +39,19 @@ public class Main extends Application {
 
     private void setupGame(Stage primaryStage) {
         VBox root = new VBox(15);
-        root.setAlignment(Pos.CENTER); //mengatur elemen di dalam root agar ke tengah semua(baik vertikal maupun horizontal)
-        root.setStyle("-fx-background-color: #f0f8ff; -fx-padding: 20;"); //memberikan styling css
+        root.setAlignment(Pos.CENTER);
+        root.setStyle("-fx-background-color: #f0f8ff; -fx-padding: 20;");
 
         HBox difficultyBox = new HBox(10);
         Button easyBtn = new Button("Easy (1-50)");
         Button mediumBtn = new Button("Medium (1-100)");
         Button hardBtn = new Button("Hard (1-200)");
 
-        easyBtn.setOnAction(e -> startGame(primaryStage, 50)); //event handler
+        easyBtn.setOnAction(e -> startGame(primaryStage, 50));
         mediumBtn.setOnAction(e -> startGame(primaryStage, 100));
         hardBtn.setOnAction(e -> startGame(primaryStage, 200));
 
-        difficultyBox.getChildren().addAll(easyBtn, mediumBtn, hardBtn); //Menambahkan ketiga tombol tingkat kesulitan ke dalam HBox difficultyBox sehingga tampil secara horizontal berjejer.
+        difficultyBox.getChildren().addAll(easyBtn, mediumBtn, hardBtn);
         root.getChildren().add(new Label("🎮 Pilih Tingkat Kesulitan:"));
         root.getChildren().add(difficultyBox);
 
@@ -108,9 +108,9 @@ public class Main extends Application {
         this.gameOver = false;
         this.timeLeft = 30;
 
-        VBox root = (VBox) primaryStage.getScene().getRoot(); //mengambil root yang sudah berisi seluruh elemen UI
-        VBox gameUI = (VBox) root.getChildren().get(2); //container berisi elemen elemen permainan seperti label, tombol, input, dll.
-        gameUI.setVisible(true); //menyembunyikan UI sebelum memulai pertandingan
+        VBox root = (VBox) primaryStage.getScene().getRoot();
+        VBox gameUI = (VBox) root.getChildren().get(2);
+        gameUI.setVisible(true);
 
         scoreLabel.setText("Skor: 0");
         attemptsLabel.setText("Percobaan: 0");
@@ -140,7 +140,7 @@ public class Main extends Application {
                 inputField.setDisable(true);
             }
         }));
-        timer.setCycleCount(Timeline.INDEFINITE); //Mengatur timer agar berjalan terus menerus tanpa batas sampai dihentikan secara manual.
+        timer.setCycleCount(Timeline.INDEFINITE);
         timer.play();
     }
 
@@ -194,7 +194,6 @@ public class Main extends Application {
     private void setFeedback(String message, Color color) {
         feedbackLabel.setText(message);
         feedbackLabel.setTextFill(color);
-        // Animasi sederhana
         FadeTransition ft = new FadeTransition(Duration.millis(500), feedbackLabel);
         ft.setFromValue(0);
         ft.setToValue(1);
