@@ -20,9 +20,6 @@ public class Main extends Application {
     private int score = 0;
     private int difficultyRange = 100;
     private boolean gameOver = false;
-    private MediaPlayer correctSound;
-    private MediaPlayer wrongSound;
-    private MediaPlayer backgroundMusic;
     private Label feedbackLabel;
     private Label scoreLabel;
     private Label attemptsLabel;
@@ -174,13 +171,10 @@ public class Main extends Application {
 
         if (guess < targetNumber) {
             setFeedback("⬇ Terlalu kecil!", Color.ORANGE);
-            playWrongSound();
         } else if (guess > targetNumber) {
             setFeedback("⬆ Terlalu besar!", Color.ORANGE);
-            playWrongSound();
         } else {
             setFeedback("✅ Tebakan benar!", Color.GREEN);
-            playCorrectSound();
             score += 10;
             scoreLabel.setText("Skor: " + score);
             if (score > highScore) {
@@ -205,16 +199,6 @@ public class Main extends Application {
         ft.setFromValue(0);
         ft.setToValue(1);
         ft.play();
-    }
-
-    private void playCorrectSound() {
-        // Implementasi suara benar (bisa pakai file .mp3 lokal)
-        // Contoh: correctSound.play();
-    }
-
-    private void playWrongSound() {
-        // Implementasi suara salah (bisa pakai file .mp3 lokal)
-        // Contoh: wrongSound.play();
     }
 
     private void loadHighScore() {
