@@ -38,7 +38,7 @@ public class Mahasiswa extends User implements MahasiswaAction {
 
     public void displayMahasiswa(){
         VBox root = new VBox(10);
-        root.setStyle("-fx-background-color: #170214;");
+        root.setStyle("-fx-background-color: #000000;");
 
         HBox hbox = new HBox(10);
         hbox.setAlignment(Pos.CENTER);
@@ -53,8 +53,8 @@ public class Mahasiswa extends User implements MahasiswaAction {
 
         TextField inBarang = new TextField();
         inBarang.setPromptText("Nama Barang");
-        inBarang.setStyle("-fx-background-color: #2b0526;" +
-                "-fx-border-color: #7d2aa1; " +
+        inBarang.setStyle("-fx-background-color: #000000;" +
+                "-fx-border-color: #00FFFF; " +
                 "-fx-border-width: 1px;" +
                 "-fx-border-radius: 10px; " +
                 "-fx-prompt-text-fill:white;" +
@@ -62,8 +62,8 @@ public class Mahasiswa extends User implements MahasiswaAction {
 
         TextField inDeskripsi = new TextField();
         inDeskripsi.setPromptText("Deskripsi");
-        inDeskripsi.setStyle("-fx-background-color: #2b0526;" +
-                "-fx-border-color: #7d2aa1; " +
+        inDeskripsi.setStyle("-fx-background-color: #000000;" +
+                "-fx-border-color: #00FFFF; " +
                 "-fx-border-width: 1px;" +
                 "-fx-border-radius: 10px; " +
                 "-fx-prompt-text-fill:white;" +
@@ -71,8 +71,8 @@ public class Mahasiswa extends User implements MahasiswaAction {
 
         TextField inLokasi = new TextField();
         inLokasi.setPromptText("Lokasi");
-        inLokasi.setStyle("-fx-background-color: #2b0526;" +
-                "-fx-border-color: #7d2aa1; " +
+        inLokasi.setStyle("-fx-background-color: #000000;" +
+                "-fx-border-color: #00FFFF; " +
                 "-fx-border-width: 1px;" +
                 "-fx-border-radius: 10px; " +
                 "-fx-prompt-text-fill:white;" +
@@ -80,12 +80,12 @@ public class Mahasiswa extends User implements MahasiswaAction {
 
         Button lapor = new Button();
         lapor.setText("Laporkan");
-        lapor.setStyle("-fx-text-fill: white; " +
-                "-fx-background-color: #7d2aa1");
+        lapor.setStyle("-fx-text-fill: black; " +
+                "-fx-background-color: #00FFFF");
 
         Button logOut = new Button("Logout");
-        logOut.setStyle("-fx-text-fill: white; " +
-                "-fx-background-color: #7d2aa1");
+        logOut.setStyle("-fx-text-fill: black; " +
+                "-fx-background-color: #00FFFF");
 
         TableColumn<Item, String> namaCol = new TableColumn<>("Nama");
         namaCol.setCellValueFactory(new PropertyValueFactory<>("itemName"));

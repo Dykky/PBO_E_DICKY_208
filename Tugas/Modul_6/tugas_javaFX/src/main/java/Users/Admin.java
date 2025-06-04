@@ -48,7 +48,7 @@ public class Admin extends User implements AdminAction {
 
     public void displayAdmin(){
         VBox root = new VBox(10);
-        root.setStyle("-fx-background-color: #2b0526;");
+        root.setStyle("-fx-background-color: #000000;");
         VBox kiri = new VBox(5);
         kiri.setAlignment(Pos.CENTER_LEFT);
         VBox kanan = new VBox(5);
@@ -59,7 +59,7 @@ public class Admin extends User implements AdminAction {
 
 
         Label halo = new Label();
-        halo.setText("Hallo min");
+        halo.setText("Hallo mimin cogan");
         halo.setStyle("-fx-text-fill: white; -fx-font-weight: bold;" +
                 "-fx-font-size: 16px");
 
@@ -71,8 +71,8 @@ public class Admin extends User implements AdminAction {
 
         TextField inNama = new TextField();
         inNama.setPromptText("Nama");
-        inNama.setStyle("-fx-background-color: #170214;" +
-                "-fx-border-color: #7d2aa1; " +
+        inNama.setStyle("-fx-background-color: #000000;" +
+                "-fx-border-color: #00FFFF; " +
                 "-fx-border-width: 1px;" +
                 "-fx-border-radius: 10px; " +
                 "-fx-prompt-text-fill:white;" +
@@ -80,20 +80,20 @@ public class Admin extends User implements AdminAction {
 
         TextField inNim = new TextField();
         inNim.setPromptText("NIM");
-        inNim.setStyle("-fx-background-color: #170214;" +
-                "-fx-border-color: #7d2aa1; " +
+        inNim.setStyle("-fx-background-color: #000000;" +
+                "-fx-border-color: #00FFFF; " +
                 "-fx-border-width: 1px;" +
                 "-fx-border-radius: 10px; " +
                 "-fx-prompt-text-fill:white;" +
                 "-fx-text-fill: white;");
 
         Button remove = new Button("Hapus");
-        remove.setStyle("-fx-text-fill: white; " +
-                "-fx-background-color: #7d2aa1");
+        remove.setStyle("-fx-text-fill: black; " +
+                "-fx-background-color: #00FFFF");
 
         Button add = new Button("Tambah");
-        add.setStyle("-fx-text-fill: white; " +
-                "-fx-background-color: #7d2aa1");
+        add.setStyle("-fx-text-fill: black; " +
+                "-fx-background-color: #00FFFF");
 
         userList.getColumns().addAll(mahasiswaCol,nimCol);
 
@@ -118,12 +118,12 @@ public class Admin extends User implements AdminAction {
         itemList.getColumns().addAll(namaCol, deskirpCol, locationCol, statusCol);
 
         Button claimed = new Button("Tandai Claimed");
-        claimed.setStyle("-fx-text-fill: white; " +
-                "-fx-background-color: #7d2aa1");
+        claimed.setStyle("-fx-text-fill: black; " +
+                "-fx-background-color: #00FFFF");
 
         Button logOut = new Button("Logout");
-        logOut.setStyle("-fx-text-fill: white; " +
-                "-fx-background-color: #7d2aa1");
+        logOut.setStyle("-fx-text-fill: black; " +
+                "-fx-background-color: #00FFFF");
 
         kanan.getChildren().addAll(itemList, claimed);
 
@@ -199,15 +199,15 @@ public class Admin extends User implements AdminAction {
         if(bool){
             Alert alert = new Alert(Alert.AlertType.INFORMATION);
             alert.setTitle("Mahasiswa Baru");
-            alert.setHeaderText("Mahasiswa Baru telat ditambahkan");
-            alert.setContentText("Mahasiswa " + nama + " dengan nim "+ nim + "telah ditambahkan");
+            alert.setHeaderText("Mahasiswa Baru telah ditambahkan");
+            alert.setContentText("Mahasiswa " + nama + " dengan nim " + nim + "telah ditambahkan");
             alert.showAndWait();
         }
         else {
             Alert alert = new Alert(Alert.AlertType.INFORMATION);
             alert.setTitle("Mahasiswa Lama");
             alert.setHeaderText("Mahasiswa telah di hapus");
-            alert.setContentText("Mahasiswa " + nama + " dengan nim "+ nim + "telah dihapus");
+            alert.setContentText("Mahasiswa " + nama + " dengan nim " + nim + "telah dihapus");
             alert.showAndWait();
         }
     }

@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8d6b87d8-ca1a-47c0-97dc-e02adfda9b4f" name="Changes" comment="Final Commit" />
+    <list default="true" id="8d6b87d8-ca1a-47c0-97dc-e02adfda9b4f" name="Changes" comment="Final Commit">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tugas_javaFX/src/main/java/Users/Admin.java" beforeDir="false" afterPath="$PROJECT_DIR$/tugas_javaFX/src/main/java/Users/Admin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tugas_javaFX/src/main/java/Users/Mahasiswa.java" beforeDir="false" afterPath="$PROJECT_DIR$/tugas_javaFX/src/main/java/Users/Mahasiswa.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -51,7 +55,15 @@
       <option name="project" value="LOCAL" />
       <updated>1749053114956</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Final Commit">
+      <option name="closed" value="true" />
+      <created>1749055066046</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1749055066046</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
