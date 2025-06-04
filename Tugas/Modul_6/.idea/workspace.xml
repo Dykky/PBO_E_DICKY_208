@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="8d6b87d8-ca1a-47c0-97dc-e02adfda9b4f" name="Changes" comment="Final Commit">
+      <change afterPath="$PROJECT_DIR$/.idea/Modul_6.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tugas_javaFX/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tugas_javaFX/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tugas_javaFX/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tugas_javaFX/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tugas_javaFX/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tugas_javaFX/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tugas_javaFX/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tugas_javaFX/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tugas_javaFX/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tugas_javaFX/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tugas_javaFX/src/main/java/Action/AdminAction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tugas_javaFX/src/main/java/Action/MahasiswaAction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tugas_javaFX/src/main/java/Main/LoginSystem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tugas_javaFX/src/main/java/Users/Admin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tugas_javaFX/src/main/java/Users/Mahasiswa.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tugas_javaFX/src/main/java/Users/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tugas_javaFX/src/main/java/data/Item.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tugas_javaFX/src/main/java/module-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tugas_javaFX/src/main/java/tugas_javafx/HelloApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/modul_6/Action/AdminAction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/modul_6/Action/MahasiswaAction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/modul_6/Data/Item.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/modul_6/HelloController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/modul_6/Main/loginsystem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/modul_6/Tugas_JAVAFX/HelloApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/modul_6/User/Admin.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/modul_6/User/Mahasiswa.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/modul_6/User/user.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/modul_6/hello-view.fxml" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
+  <component name="ProjectId" id="2y2sbbrSXGhBbpQetEaHS2ucA8P" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.HelloApplication.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/PBO_E_DICKY_208/Tugas/Modul_6&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
+  }
+}</component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8d6b87d8-ca1a-47c0-97dc-e02adfda9b4f" name="Changes" comment="" />
+      <created>1749044074506</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1749044074506</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Final Commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Final Commit" />
+  </component>
+</project>
